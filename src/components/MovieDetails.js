@@ -8,7 +8,7 @@ export default class MovieDetails extends Component {
         return (
             <div>
                 <MovieCard id={this.props.match.params.movieId} />
-                <FeaturedCast id={this.props.match.params.movieId} />
+                <FeaturedCast id={this.props.match.params.movieId} type="movie" />
             </div>
         )
     }
