@@ -4,6 +4,8 @@ import Navbar from './components/Navbar'
 import Start from './components/Start'
 import Shows from './components/Shows'
 import Movies from './components/Movies'
+import MovieDetails from './components/MovieDetails'
+import MovieDetails from './components/ShowDetails'
 
 export default class App extends Component {
 
@@ -14,7 +16,9 @@ export default class App extends Component {
 					<Navbar />
 					<Route exact path='/' component={Start} />
 					<Route exact path='/movies' component={Movies} />
-					<Route exact path='/shows' component={Shows} />
+					<Route path='/movies/:movieId' component={MovieDetails} />
+					<Route path='/shows' component={Shows} />
+					<Route path='/shows/:showId' component={ShowDetails} />
 				</div>
 			</BrowserRouter>
 		);
