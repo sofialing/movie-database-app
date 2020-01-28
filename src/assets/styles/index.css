@@ -37,8 +37,11 @@ a:hover {
 	background-position: center bottom;
 	background-attachment: fixed;
 	padding: 15rem 0;
-	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.75);
 	text-align: center;
+}
+
+.jumbotron h1 {
+	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.75);
 }
 
 .jumbotron .container {
@@ -65,6 +68,15 @@ a:hover {
 
 #hero-search .form-control::placeholder {
 	color: #ffff;
+}
+
+#hero-search .list-group-item {
+	text-align: left;
+	background-color: rgba(0, 0, 0, 0.75);
+}
+
+#hero-search .list-group-item:first-of-type {
+	padding-top: 1.5rem;
 }
 
 .movie-backdrop {
