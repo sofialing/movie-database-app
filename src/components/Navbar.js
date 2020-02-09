@@ -11,19 +11,7 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <NavLink to="/" className="nav-link">Home</NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink to="/movies" className="nav-link">Movies</NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink to="/shows" className="nav-link">Tv shows</NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink to="/discover" className="nav-link">Discover</NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <button type="button" className="btn btn-link text-white"><i className="fas fa-search"></i></button>
+                        <NavLink to="/" className="nav-link"><i className="fas fa-search"></i></NavLink>
                     </li>
                 </ul>
             </div>

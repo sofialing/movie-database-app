@@ -87,7 +87,7 @@ export default class HeroSearch extends Component {
 		const { value, suggestions } = this.state;
 
 		const inputProps = {
-			placeholder: 'Search for a movie, tv show or actor....',
+			placeholder: 'Search for movies....',
 			value,
 			onChange: this.onChange
 		};
