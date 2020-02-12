@@ -38,6 +38,8 @@ a:hover {
 	background-attachment: fixed;
 	padding: 15rem 0;
 	text-align: center;
+	min-height: 100vh;
+	margin-bottom: 0;
 }
 
 .jumbotron h1 {

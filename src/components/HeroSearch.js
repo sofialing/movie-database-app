@@ -16,6 +16,7 @@ export default class HeroSearch extends Component {
 	}
 
 	getSuggestionValue = suggestion => suggestion.title;
+	// getSuggestionValue = suggestion => `${suggestion.title} (${suggestion.year})`;
 
 	renderSuggestion = suggestion => (
 		<div>
@@ -53,7 +54,7 @@ export default class HeroSearch extends Component {
 		const trimmedValue = value.trim();
 		const api_key = '7119aa69d9ede648d34b48fb09f84d2e';
 
-		if (trimmedValue.length > 2) {
+		if (trimmedValue.length) {
 			axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${api_key}&query=${trimmedValue}&language=en-US&page=1&include_adult=false`)
 				.then(({ data }) => {
 					const result = data.results

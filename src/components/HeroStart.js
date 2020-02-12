@@ -4,7 +4,7 @@ import HeroSearch from './HeroSearch';
 export default class HeroStart extends Component {
 	render() {
 		return (
-			<section className="jumbotron jumbotron-fluid mb-5">
+			<section className="jumbotron jumbotron-fluid">
 				<div className="container">
 					<h1 className="display-3 font-weight-bold text-uppercase">
 						The movie database
