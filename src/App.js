@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Start from './components/Start'
-import Shows from './components/Shows'
-import Movies from './components/Movies'
-import MovieDetails from './components/MovieDetails'
-import ShowDetails from './components/ShowDetails'
+import Navbar from './components/navigation/Navbar'
+import Start from './components/pages/Start'
+import Shows from './components/pages/Shows'
+import Movies from './components/pages/Movies'
+import MovieDetails from './components/movie/MovieDetails'
+import ShowDetails from './components/show/ShowDetails'
 
 export default class App extends Component {
 	render() {

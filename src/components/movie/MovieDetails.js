@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import MovieCard from './MovieCard'
-import FeaturedCast from './FeaturedCast'
+import FeaturedCast from '../cast/FeaturedCast'
 
 export default class MovieDetails extends Component {
 	render() {
