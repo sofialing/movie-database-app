@@ -1,14 +1,17 @@
-import React, { Component } from 'react'
-import MovieCard from './MovieCard'
-import FeaturedCast from '../cast/FeaturedCast'
+import React from 'react'
+import axios from 'axios'
 
-export default class MovieDetails extends Component {
-	render() {
-		return (
-			<div>
-				<MovieCard id={this.props.match.params.id} />
-				<FeaturedCast id={this.props.match.params.id} type='movie' />
-			</div>
-		)
-	}
+const MovieDetails = ({ details }) => {
+	return (
+		<ul>
+			{details.map((item, i) => (
+				<li key={i}>
+					<h3>{item.type}</h3>
+					<span>{item.info}</span>
+				</li>
+			))}
+		</ul>
+	)
 }
+
+export default MovieDetails
