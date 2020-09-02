@@ -21,6 +21,21 @@ const Navbar = () => {
 			<div className='collapse navbar-collapse' id='navbarNav'>
 				<ul className='navbar-nav'>
 					<li className='nav-item'>
+						<NavLink to='/movie' className='nav-link'>
+							Movies
+						</NavLink>
+					</li>
+					<li className='nav-item'>
+						<NavLink to='/tv' className='nav-link'>
+							TV Shows
+						</NavLink>
+					</li>
+					<li className='nav-item'>
+						<NavLink to='/' className='nav-link'>
+							Discover
+						</NavLink>
+					</li>
+					<li className='nav-item'>
 						<NavLink to='/' className='nav-link'>
 							<i className='fas fa-search'></i>
 						</NavLink>

@@ -79,6 +79,11 @@ a {
 		text-align: left;
 		background-color: rgba(0, 0, 0, 0.75);
 
+		&:hover {
+			background-color: rgba(31, 31, 31, 0.75);
+			cursor: pointer;
+		}
+
 		&:first-of-type {
 			padding-top: 1.5rem;
 		}
@@ -137,4 +142,8 @@ a {
 	font-weight: 700;
 	font-size: 1rem;
 	text-transform: uppercase;
+}
+
+.footer {
+	background-color: #171717;
 }

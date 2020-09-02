@@ -2,13 +2,12 @@ import React from 'react'
 import MovieDetails from './MovieDetails'
 
 const MovieCard = ({ movie }) => {
-	const backdrop = { backgroundImage: `url(${movie.backdrop})` }
 	return (
-		<section className='movie-backdrop' style={backdrop}>
+		<section className='movie-backdrop' style={{ backgroundImage: `url(https://image.tmdb.org/t/p/original/${movie.backdrop_path})` }}>
 			<div className='container movie-info'>
 				<div className='movie-poster'>
 					<img
-						src={movie.poster}
+						src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
 						alt={`Poster of '${movie.title}'`}
 						className='img-fluid'
 					/>
@@ -20,7 +19,7 @@ const MovieCard = ({ movie }) => {
 						</h1>
 						<p className='lead'>{movie.overview}</p>
 					</div>
-					<MovieDetails details={movie.details} />
+					<MovieDetails movie={movie} />
 				</div>
 			</div>
 		</section>
